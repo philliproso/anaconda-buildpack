@@ -90,7 +90,9 @@ fi
 
 # Install dependencies with Pip.
 puts-step "Installing dependencies using Conda (1.4.6)"
+set +e
 /app/.heroku/anaconda/bin/conda install bitarray --yes
+set -e
 
 # ### Finalize
 #
